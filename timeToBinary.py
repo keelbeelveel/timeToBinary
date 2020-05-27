@@ -31,7 +31,7 @@ while len(minute_bin) != 6:
 
 while len(second_bin) != 6:
     second_bin = '0' + second_bin
-
+# TODO: Prompt should explain output format to the user.
 prompt_ = f'''The time is [{AM_PM} {hour_bin} {minute_bin} {second_bin}].
 What is the time in base-10? \
 '''

@@ -1,10 +1,13 @@
 import random
 random.seed()
 
-hour = random.randint(1,12)
-minute = random.randint(1,59)
-second = random.randint(1,59)
-AM_PM = random.randint(0,1)
+# TODO: Add menu/explanation?
+# TODO: Add scoring modes?
+
+hour = random.randint(1, 12)
+minute = random.randint(1, 59)
+second = random.randint(1, 59)
+AM_PM = random.randint(0, 1)
 AM_PM_str = 'AM' if AM_PM == 0 else 'PM'
 
 while len(str(minute)) != 2:
@@ -36,7 +39,7 @@ What is the time in base-10? \
 time_guess = input(prompt_)
 
 # Results
-if time_guess == answer:
+if time_guess.lower() == answer.lower():
     response = f'''You're Right!
 
 The correct Time was "{answer}".

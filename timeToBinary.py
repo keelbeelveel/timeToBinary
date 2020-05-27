@@ -18,9 +18,9 @@ while len(str(second)) != 2:
 answer = f"{hour}:{minute}:{second} {AM_PM_str}"
 
 # Convert numbers to binary
-hour_bin = format(hour, 'b')
-minute_bin = format(minute, 'b')
-second_bin = format(second, 'b')
+hour_bin = format(int(hour), 'b')
+minute_bin = format(int(minute), 'b')
+second_bin = format(int(second), 'b')
 
 # Adjust Format
 while len(hour_bin) != 4:

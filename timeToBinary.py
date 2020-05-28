@@ -33,9 +33,11 @@ while len(second_bin) != 6:
     second_bin = '0' + second_bin
 # TODO: Prompt should explain output format to the user.
 prompt_ = f'''The time is [{AM_PM} {hour_bin} {minute_bin} {second_bin}].
+(Answers should be in the format [hh:mm:ss] [am/pm])
 What is the time in base-10? \
 '''
 # Test the user:
+
 time_guess = input(prompt_)
 
 # Results
